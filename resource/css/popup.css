@@ -1,0 +1,40 @@
+html,body{
+    width:280px;
+    height:166px;
+}
+.plugin-title h3{
+    text-align: center;
+    margin-top:5px;
+    padding-bottom:10px;
+    border-bottom:1px dashed black;
+}
+.plugin-title p{
+    font-size:12px;
+    text-indent:2em;
+    margin:5px;
+}
+.qrcode-wrapper{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    border: 1px dashed black;
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#qrcode{
+    padding-top:2px;
+    padding-left: 2px;
+}
+.qrcode-wrapper .qrcode-title{
+    position: absolute;
+    top:10px;
+    left:110px;
+}
+.qrcode-wrapper .qrcode-title p{
+    margin-bottom:10px;
+    font-size:14px;
+}

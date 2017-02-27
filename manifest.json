@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "TabPlus",
+    "description": "a chrome plug-in for new tab",
+    "version": "0.1.2",
+    "icons": {
+        "16": "./resource/img/tabplus.png",
+        "48": "./resource/img/tabplus.png",
+        "128": "./resource/img/tabplus.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "./resource/img/tabplus.png",
+            "48": "./resource/img/tabplus.png",
+            "128": "./resource/img/tabplus.png"
+        },
+        "default_title": "a new chrome tab",
+        "default_popup": "./page/popup.html"
+    },
+    "options_page": "./page/options.html",
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "notifications",
+        "storage",
+        "declarativeContent",
+        "*://www.zhangshuang.top/*",
+        "*://www.baidu.com/*"
+    ],
+    "homepage_url": "http://www.zhangshuang.top",
+    "chrome_url_overrides": {
+        "newtab": "./page/tab.html"
+    },
+    "background": {
+        "scripts": ["./resource/js/background.js"]
+    },
+    "content_scripts": [{
+        "matches": ["*://www.baidu.com/*"],
+        "css": ["./resource/css/noad.css"]
+    }]
+}
